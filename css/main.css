@@ -120,7 +120,7 @@ a:hover, a:focus, a:active {
 
 .popup {
   font-size: 0.9em;
-  font-weight: 500;
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.6);
   margin: 0.5em 0 2em 0;
   border-radius: 2px;
@@ -167,7 +167,7 @@ a:hover, a:focus, a:active {
 .login-judul {
   color: #333;
   font-weight: 500;
-  margin: 12px 0;
+  margin: 12px 0 20px 0;
   display: block; }
 
 .login-form label {
@@ -230,6 +230,6 @@ a:hover, a:focus, a:active {
   .login-wrap {
     min-height: 100vh;
     margin: 0;
-    padding: 4em 2em; } }
+    padding: 4em 1em; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -24,7 +24,7 @@ a {
 }
 .popup{
 	font-size: 0.9em;
-	font-weight: 500;
+	font-weight: 600;
 	color: rgba(0,0,0,0.6);
 	margin: 0.5em 0 2em 0;
 	border-radius: 2px;
@@ -58,7 +58,7 @@ a {
 .login-judul{
 	color: #333;
 	font-weight: 500;
-	margin: 12px 0;
+	margin: 12px 0 20px 0;
 	display: block;
 }
 .login-form {
@@ -139,6 +139,6 @@ a {
 	.login-wrap {
 		min-height: 100vh;
 		margin: 0;
-		padding: 4em 2em;
+		padding: 4em 1em;
 	}
 }
