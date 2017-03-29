@@ -1,0 +1,144 @@
+@import "color";
+@import "waves";
+@import "reset";
+$bezier-1: cubic-bezier(0.19, 1, 0.22, 1);
+.transition-1 {
+    transition: all 275ms $bezier-1;
+}
+
+.transition-2 {
+    transition: all 275ms ease-in-out;
+}
+
+body {
+	font-family: Roboto, Helvetica, sans-serif !important;
+    background: $lightBlue-700;
+}
+
+a {
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+}
+.popup{
+	font-size: 0.9em;
+	font-weight: 500;
+	color: rgba(0,0,0,0.6);
+	margin: 0.5em 0 2em 0;
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	padding: 1.5em;
+	width: 100%;
+	.material-icons{
+		color: rgba(0,0,0,0.5);
+		margin-right: 20px;
+	}
+	&.warning{
+		background: rgba(255, 202, 40, 0.75)
+	}
+}
+.login-wrap {
+	box-shadow: 0 0 1px 4px rgba(0,0,0,0.04);
+    border-radius: 2px;
+    position: relative;
+    margin: 10vh auto;
+    background: white;
+    padding: 2.5em 3em;
+}
+
+.login-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-judul{
+	color: #333;
+	font-weight: 500;
+	margin: 12px 0;
+	display: block;
+}
+.login-form {
+	label{
+		display: block;
+		margin-top: 2em;
+		width: 100%;
+		position: relative;
+	}
+    input {
+        @extend .transition-1;
+        border: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+        padding: 1em;
+        width: 100%;
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid $lightBlue-600;
+        }
+    }
+    .material-icons{
+    	font-size: 18px;
+    	color: rgba(0,0,0,0.18);
+    	position: absolute;
+    	&.right{
+    		right: 12px;
+    		top: 30%;
+    	}&.left{
+    		left: 5px;
+    		top: 25%;
+    	}
+    }
+    .forgot{
+    	display: block;
+    	margin: 18px 5px 20px 5px;
+    	font-size: 0.8em;
+    	color: #cccccc;
+    	&:hover{
+    		text-decoration: underline;
+    		color: $lightBlue-700;
+    	}
+    }
+}
+.btn{
+	margin-bottom: 10px;
+    transition: all 275ms ease-in;
+    text-transform: UPPERCASE;
+    border-radius: 2px;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.95em;
+    font-weight: 300;
+    &-login {
+        background: $lightBlue-700;
+        color: white;
+        &:hover,
+        &:focus,
+        &:active {
+            background: $lightBlue-800;
+            color: white;
+        }
+        &-inverse {
+        	background: white;
+        	border: 1px solid $lightBlue-700;
+        	color: $lightBlue-700;
+        	&:hover,
+        &:focus,
+        &:active {
+            background: $lightBlue-700;
+            color: white;
+        }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+	.login-wrap {
+		min-height: 100vh;
+		margin: 0;
+		padding: 4em 2em;
+	}
+}
